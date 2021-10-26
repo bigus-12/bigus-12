@@ -556,12 +556,12 @@ body{
 }
 
 .vis-para{
-    background-image: url(../images/eye..png);
+    background-image: url(../images/eye.png);
    
 }
 .mis-para{
     padding-top: 2%;
-    background-image: url(../images/flag..png);
+    background-image: url(../images/flag.png);
 }
 .mis-para,.vis-para{
     background-size: contain; 
@@ -732,7 +732,6 @@ h5{
     font-family: 'Dancing Script', cursive;
     /* font-size: 40px; */
 }
-
 /*************************************** CONTACT US *****************************************/
 
 .form{
@@ -1120,6 +1119,9 @@ footer {
         background-repeat: no-repeat;
     }
 }
+/* @media screen and (max-width:780px) and (min-width:768px) {
+    
+} */
 
 @media screen and (max-width:780px) {
     *{
@@ -1143,6 +1145,9 @@ footer {
         padding: 0%;
         margin:0%;
     }
+    .fullbox{
+        margin-left: 14%;
+    }
     
 }
 @media screen and (max-width:650px) {
@@ -1155,7 +1160,10 @@ footer {
     }
     .processcontent{
         font-size: 35px;
-    }    
+    } 
+    .fullbox{
+        margin-left: 7%;
+    }   
 }
 
 
