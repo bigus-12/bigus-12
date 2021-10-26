@@ -1,0 +1,473 @@
+:root {
+    --overlay-color: rgba(33, 33, 33 , 0.85);
+    --menu-speed: 1s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+body{
+    background-color: #202020;
+}
+/*************************************NAVBAR CSS **********************************/
+.navbar{
+    background-color: #202020;
+    z-index: 1; 
+    position: fixed; 
+}
+
+
+.navbar-toggler{
+    border-color: #B44545;
+    width: 80%;
+    height: 35px;
+    align-items: center;
+}
+.nav-link{
+    color:white;
+}
+.nav-link:active , .nav-link:hover{
+    color: #FFDF6C;
+}
+.brand-logo{
+    width: 80px;
+}
+.brand-name{
+    width: 15%;
+    margin-top: 1%;
+    padding: 3px;
+}
+.navbar.scrolled{
+    background-color: #202020;
+    transition: 0.2s ease-in-out;
+    height: 68px;
+}
+.brand-name.scrolled{
+    visibility: hidden;
+}
+
+.brand-logo.scrolled{
+    width: 45px;
+    transition: 0.2s ease-in-out;
+}
+.current-link{
+    color: #FFDF6C;
+    text-decoration: none;
+}
+.active-btn{
+    border-bottom: 3px solid #B44545;
+}
+/******************NOT IN USE*************************/
+/* .container{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* padding: 30px; */
+
+/* .container .card-body{
+    position: relative;
+    max-width: 300px;
+    height: 10px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 0.5); 
+    transition: 0.3s ease-in-out;
+
+
+.container .card-body:hover{
+    height: 170px;
+}
+
+.container .card-body .card-image{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card-body .card-image img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.container .card-body .card-content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card-body:hover .card-content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    transition-delay: 0.3s;
+}
+*/
+/***********************Project Section**************************/
+.container{
+    margin-top: 10%;
+}
+.heading{
+    color: #ffdf6c;
+    text-align: center;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.sub-heading1, .sub-heading2{
+    margin-bottom: 3%;
+    color: #ffdf6c;
+    padding-left: 7%;
+}
+.sub-heading2{
+    margin-top: 5%;
+}
+.card {
+    width: 18%;
+    height: 250px;
+    border-radius: 18px;
+    background: #b44545;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    margin: 20%;
+    padding: 0%;
+  }
+  .card-image {
+    background: url("../images/programmer.jpg");
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-size:cover;
+  }
+  .card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .card {
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+  }
+  .card-text{
+      width: 100%;
+  }
+  .row{
+      width: 100%;
+      justify-content: center;  
+      margin: 0%;
+  }
+  /**********************************Footer******************************************/
+.footerarea{
+    background-color: #B44545;
+     width: 100%;
+    height: 50px; 
+    position: absolute; 
+    margin-top: 65%; 
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(-45deg, #FFDF6C, #B44545);
+    color: #202020;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #202020;
+}
+  /******************scroll-BAR*********************************/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #202020;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 223, 108,0.8);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B44545;
+  }
+
+
+ 
+  /********************media queries*******************************/
+
+/* :root{
+    --Extra-small: 576px;
+    --Small:576px;
+    --Medium:768px;
+    --Large:992px;
+    --Extra-large:1200px;
+} */
+@media screen and (min-width:993px) {
+    input{
+        display: none;
+    }
+    .abtuslink{
+        width: 100px;
+    }
+}
+@media screen and (max-width:992px){
+    /* hamburger */
+    .brand-logo.scrolled{
+        margin-top:-10%;
+    }
+    .menu-wrap {
+        position: fixed;
+        top: 0;
+        top: 1%;
+        left: 90%;
+        z-index: 1;
+        visibility: visible;
+    }
+
+    .menu-wrap .toggler {
+        position: absolute;
+        top: 0;
+        left: 90%;
+        z-index: 2;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+
+    .menu-wrap .hamburger {
+        position: absolute;
+        top: 0;
+        left: 90%;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Hamburger Line */
+    .menu-wrap .hamburger > div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+
+    /* Hamburger Lines - Top & Bottom */
+    .menu-wrap .hamburger > div::before,
+    .menu-wrap .hamburger > div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+    }
+
+    /* Moves Line Down */
+    .menu-wrap .hamburger > div::after {
+        top: 10px;
+    }
+
+    /* Toggler Animation */
+    .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+    }
+
+    /* Turns Lines Into X */
+    .menu-wrap .toggler:checked + .hamburger > div:before,
+    .menu-wrap .toggler:checked + .hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    /* Rotate On Hover When Checked */
+    .menu-wrap .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg);
+    }
+
+    /* Show Menu */
+    .menu-wrap .toggler:checked ~ .menu {
+        visibility: visible;
+    }
+
+    .menu-wrap .toggler:checked ~ .menu > div {
+        transform: scale(1);
+        transition-duration: var(--menu-speed);
+    }
+
+    .menu-wrap .toggler:checked ~ .menu > div > div {
+        opacity: 1;
+        transition:  opacity 0.4s ease 0.4s;
+    }
+
+    .menu-wrap .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-wrap .menu > div {
+        background: var(--overlay-color);
+        border-radius: 50%;
+        width: 200vw;
+        height: 200vw;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease;
+    }
+
+    .menu-wrap .menu > div > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .menu-wrap .menu > div > div > ul > li {
+        list-style: none;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .menu-wrap .menu > div > div > ul > li > a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.4s ease;
+    }
+}
+/**********************************phone-width************************************/
+@media screen and (max-width: 576px){
+    body{
+        font-size: 12px;
+    }
+    .card{
+        width: 45%;
+        height: 150px;
+    }
+    .card-image{
+        height: 300px;
+    }
+    .card-text{
+        height: 60px;
+    }
+    .sub-heading1,.sub-heading2{
+        text-align: center;
+        padding: 0%;
+    }
+}
+
+/**********************************tablet-width************************************/
+
+@media screen and (max-width: 786px) and (min-width: 577px){
+    body{
+        font-size: 12px;
+    }
+    .card{
+        width: 30%;
+        height: 150px;
+    }
+    .card-image{
+        height: 500px;
+    }
+    .card-text{
+        height: 60px;
+    }
+     .sub-heading1,.sub-heading2{
+        padding-left: 15%;
+    }
+}
+
+/**********************************laptop-width************************************/
+@media screen and (max-width: 992px) and (min-width: 785px){
+    body{
+        font-size: 12px;
+    }
+    .card{
+        width: 23%;
+        height: 170px;
+    }
+    .card-image{
+        height: 100px;
+    }
+    .card-text{
+        height: 20px;
+    }
+}
+/**********************************laptop-width************************************/
+@media screen and (max-width: 1250px) and (min-width: 991px){
+    body{
+        font-size: 12px;
+    }
+    .card{
+        width: 18%;
+        height: 170px;
+    }
+    .card-image{
+        height: 100px;
+    }
+    .card-text{
+        height: 20px;
+    }
+}
+/**********************************desktop-width************************************/
+@media screen and (min-width: 1251px){
+    body{
+        font-size: 12px;
+    }
+    .card{
+        width: 25%;
+        height: 250px;
+    }
+    .card-image{
+        height: 180px;
+    }
+    .card-text{
+        height: 100px;
+    }
+}

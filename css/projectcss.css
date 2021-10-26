@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*************************************NAVBAR CSS **********************************/
+.navbar{
+    background-color: #202020;
+}
+
+.nav-link{
+    color:white;
+}
+.nav-link:active , .nav-link:hover{
+    color: #FFDF6C;
+}
+.brand-logo{
+    width: 80px;
+}
+.brand-name{
+    width: 15%;
+    margin-top: 1%;
+    margin-left: -20%;
+    padding: 3px;
+}
+.current-link{
+    color: #FFDF6C;
+    text-decoration: none;
+}
+.active-btn{
+    border-bottom: 3px solid #B44545;
+}
+
+
+.container{
+    position: relative;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card-body{
+    position: relative;
+    max-width: 300px;
+    height: 10px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 0.5); */
+    transition: 0.3s ease-in-out;
+}
+
+.container .card-body:hover{
+    height: 170px;
+}
+
+.container .card-body .card-image{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card-body .card-image img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card-body .card-content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card-body:hover .card-content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    transition-delay: 0.3s;
+}
+.grid{
+    background-color:#202020;
+    min-height: 1000px;
+}
+.heading{
+    text-align: center;
+    color: #ffdf6c;
+    padding: 40px;
+}
+.sub-heading1{
+    text-align: center;
+    color:#ffdf6c ;
+    padding-bottom: 20px;
+}
+.inner-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    place-items: center;
+    
+}
+.tile-cards{
+    background-image:url(../images/programmer.jpg) ;
+    width: 200px;
+    height: 200px;
+}
+
+.sub-heading2{
+    text-align: center;
+    color:#ffdf6c ;
+    padding: 20px;
+}
+.card {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 150px 100px;
+    grid-template-areas: "image" "text";
+    border-radius: 18px;
+    background: #b44545;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+}
+.card-image {
+    grid-area: image;
+    background: url("../images/programmer.jpg");
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-size:cover;
+}
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+}
+
+
+/***********************************************ABOUT US************************************************/
+.footerarea{
+    background-color: #B44545;
+     width: 100%;
+    height: 50px; 
+    position: absolute; 
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(-45deg, #FFDF6C, #B44545);
+    color: #202020;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #202020;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #202020;
+            color: white;
+        }
+        form{
+            text-align: center;
+        }
+        .formarea{
+            border: solid 5px #B44545;
+        }
+        .maincontent{
+            align-content: center;
+            margin: 5%;
+            /* margin-left:15%; */
+            text-align: center;
+        }
+        .longtext{
+            height: 300px;
+        }
+        .inputareas{
+            width: 100%;;
+        }
+        table{
+            width: 100%;
+            margin-top:2%;
+        }
+        th{
+            color:#FFDF6C;
+        }
+        td{
+            margin: 2%;
+            padding: 2%;
+        }
+        textarea{
+            height: 100px;
+        }
+        .btn{
+            margin-bottom: 2%;
+        }
+    </style>
+    <title>Enter-Info</title>
+</head>
+<body>
+
+    <!-- name;linkedinID;Bio;Interest;Specialization;github-Profile;Whats-on-your-mind; --> 
+    <div class="maincontent">
+        <div class="formarea">
+            <form >
+                <table>
+                    <tr>
+                        <th><h3>INPUTS</h3></th> 
+                        <th><h3>YOUR ANSWER</h3></th>
+                    </tr>
+                    <tr>
+                        <td><label for="photo">PHOTO</label></td>
+                        <td><input type="file" id="myFile" name="filename"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">NAME</label></td>
+                        <td><input class="inputareas" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">MAIL-ID</label></td>
+                        <td><input class="inputareas" type="mailid"></td>
+                    </tr>               
+                    <tr>
+                        <td><label for="bio">BIO</label></td>
+                        <td><textarea class="inputareas" type="bio"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="specialization">Specialization</label></td>
+                        <td><textarea class="inputareas" type="text"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="interest">Interest</label></td>
+                        <td><textarea class="inputareas" type="text"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="github">Git-hub</label></td>
+                        <td><input class="inputareas" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="linkedinid">Linkedin-Id</label></td>
+                        <td><input class="inputareas" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="whats-on-your-min">Whats On Your Mind</label></td>
+                        <td><textarea class="inputareas longtext" type="text"></textarea></td>
+                    </tr>         
+                </table>
+                <input class="btn btn-success" type="submit">
+        
+            </form>        
+
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../js/peoplepagejs.js"></script>
+</body>
+</html>
