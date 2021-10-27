@@ -613,11 +613,16 @@ p{
 }
 .content{
     position:relative;
-    padding: 40px 60px;
+    padding: 40px 40px;
     color:white;
-    text-align:center;
     /* z-index:0; */
-    
+}
+
+.content > p{
+    display: flex;
+    justify-content: start;
+    text-align:center;
+    flex-direction: column;
 }
 .valuescircle,.valuescircle1,.valuescircle2{
     margin-left:-2%;
@@ -796,8 +801,12 @@ footer {
 
 /**********************************phone-width************************************/
 @media screen and (max-width: 380px){
-    .heading{
-        padding-left: 6%;
+    #valuesheading{
+        padding: 0%;
+        width: 100%;
+    }
+    .third1,.third2{
+        margin-left: 0%;
     }
     .first{
         padding-left: 10%;
@@ -824,18 +833,31 @@ footer {
         width: 300px;
     }
     .square{
-        margin-left:12%;
+        margin-left:0%;
         margin-bottom: 2%;
     }
     .third2{
         margin-top: -1%;
         padding-left: 0;
     }
+    .valuescircle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .valuescircle1{
-        padding-left:6%;
+        /* padding-left:6%; */
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .valuescircle2{
-        padding-left: 7%;
+        /*  padding-left: 7%; */
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -849,9 +871,15 @@ footer {
     }
     h1{
         padding-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 10%;
+        width: 90%;
     }
 }
 @media screen and (max-width: 576px) and (min-width: 380px){
+    .third{
+        height: 790px;
+    }
     .first1{
         padding-left: 5%;
     }
@@ -867,11 +895,16 @@ footer {
     .quote{
         padding-top: 5%;
     }
+    .third1,.third2{
+        width: 100%;
+        margin-left:0%;
+    }
     .heading{
-        padding-left: 8%;
+        padding-left: 0%;
     }
     .square{
-        margin-left: 30%;
+        /* margin-left: 30%; */
+        margin: 0%;
         font-size: 13px;
         width: 200px;
         height: 200px;
@@ -881,18 +914,28 @@ footer {
         margin-top: -20%;
         margin-right: 0;
     }
+    .valuescircle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .valuescircle1{
-        padding-left: 4%;
+        /* padding-left: 4%; */
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .valuescircle2{
-        padding-left: 10%;
+        padding: 0%;
+        /* padding-left: 10%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 /**********************************tablet-width************************************/
 @media screen and (max-width: 767px) and (min-width: 577px){
-    h1{
-        margin-top: 7%;
-    }
     h2{
         margin-top: 2%;
         margin-bottom: 2%;
