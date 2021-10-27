@@ -1175,6 +1175,9 @@ footer {
         font-size: 25px;
         padding: 5%;
     }
+    .fullbox{
+        margin-left: 0%;
+    }   
 }
 
 @media screen and (max-width:310px) {
