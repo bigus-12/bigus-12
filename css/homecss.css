@@ -32,15 +32,14 @@
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Lovelo', sans-serif;
-}
-
 body{
     background-color: #020202;
     color: #fff;
     font-family: 'Playfair Display', serif;
     font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lovelo', sans-serif;
 }
 
 /*************************************NAVBAR CSS **********************************/
@@ -108,7 +107,7 @@ body{
     border-bottom: 3px solid #FFDEF3;
 }
 
-.abtuslink{
+.abtuslink,.joinuslink{
     width: 85px;
 }
 
@@ -468,6 +467,7 @@ body{
         visibility: visible;
     }
 }
+
 /************************************** CAROUSEL ***************************************/   
 .carousel{
     padding-top: 2%;
@@ -732,7 +732,7 @@ h5{
       padding-right:1%;
 }
 /*************************************** QUOTE *****************************************/
-.quote>h1{
+.quote{
     font-family: 'Dancing Script', cursive;
     /* font-size: 40px; */
 }
@@ -952,7 +952,7 @@ h5{
 }
 /***** FOOTER ******/
 footer {
-    text-align: center;
+    /* text-align: center; */
     /* padding: 20px; */
     color: ivory;
     background: linear-gradient(-45deg, #3B55CE, #5e1254f1);
@@ -969,8 +969,7 @@ footer {
     margin:0%;
 }
 .footer-links{
-    padding-left: 0%;
-    
+    padding: 0%;
 }
 .footer-links a{
     text-decoration: none;
@@ -981,31 +980,38 @@ footer {
 
 .footercontent{
     text-align: center;
-    font-size: large;
+    font-size: 14px;
 }
 .connectwithus{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    text-align: center;
 }
 .connectwithus1{
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
 }
-#icon1{
-    width: 70px;
-    width:70px;
+.links1{
+    padding-top: 2%;
 }
-#icon3{
-    padding-left: 7%; ;
-    width: 60px;
-    height:45px;
+.links2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.details{
+    height:30px ;
+}
+#icon1,#icon2,#icon3{
+    height: 30px;
+    width:30px;
 }
 .footerlogo{
-    margin-left:20%;
+    margin-left:50%;
 }
-
 
 /**************************************************media queries*********************************************/
 @media screen and (min-width:992px) and (max-width:1200px) {
@@ -1179,9 +1185,6 @@ footer {
         font-size: 25px;
         padding: 5%;
     }
-    .fullbox{
-        margin-left: 0%;
-    }   
 }
 
 @media screen and (max-width:310px) {

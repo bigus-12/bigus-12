@@ -9,7 +9,9 @@
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
 }
-
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lovelo', sans-serif;
+}
 body{
     background-color: #020202;
 }
@@ -79,7 +81,7 @@ body{
     border-bottom: 3px solid #FFDEF3;
 }
 
-.abtuslink{
+.abtuslink,.joinuslink{
     width: 85px;
 }
 
@@ -482,6 +484,17 @@ body{
        background-color: #020202;
    }
 /******************people-pagemain-content *****************/
+h2{
+    color: #435DD4;
+    text-shadow: 0 0 42px #435DD4, 
+                 0 0 82px #435DD4, 
+                 0 0 92px #435DD4, 
+                 0 0 102px #435DD4, 
+                 0 0 151px#435DD4; 
+    z-index: inherit; 
+    position: relative;
+    font-size: 150%; 
+}
 .maincontent{
     z-index: 5;
     width: 100%;
@@ -511,53 +524,53 @@ body{
     
 }
 #lathaphoto{
-    background-image: url(../images/HOD\ W.png);
+    background-image: url(/images/HOD\ W.png);
     background-position: center;
     background-size: 90%;
 }
 #avinashphoto{
-    background-image: url(../images/Avinash.jpeg);
+    background-image: url(/images/Avinash.jpeg);
 }
 #gokulphoto{
-    background-image: url(../images/Gokul.jpg);
+    background-image: url(/images/Gokul.jpg);
     z-index: 1;
 }
 #riduphoto{
-    background-image: url(../images/Ridu1.jpg);
+    background-image: url(/images/Ridu1.jpg);
 }
 #anirudhphoto{
-    background-image: url(../images/Anirudh.jpg);
+    background-image: url(/images/Anirudh.jpg);
 }
 #harshitaphoto{
-    background-image: url(../images/harshita.jpeg);
+    background-image: url(/images/Harshita.jpeg);
 }
 #ganeshphoto{
-    background-image: url(../images/Ganesh.jpg);
+    background-image: url(/images/Ganesh.jpg);
 }
 #nithishphoto{
-    background-image: url(../images/Nithish.jpeg);
+    background-image: url(/images/Nithish.jpeg);
 }
 #yogeshphoto{
-    background-image: url(../images/Yogesh.jpeg);
+    background-image: url(/images/Yogesh.jpeg);
 }
 #subhashreephoto{
-    background-image: url(../images/Subhashree.jpeg);
+    background-image: url(/images/Subhashree.jpeg);
 }
 #nithyaphoto{
-    background-image: url(../images/Nithya.jpeg);
+    background-image: url(/images/Nithya.jpeg);
     background-position: center;
 }
 #karthikphoto{
-    background-image: url(../images/Karthik.jpg);
+    background-image: url(/images/Karthik.jpg);
 }
 #luxiphoto{
-    background-image: url(../images/Luxishanu.jpeg);
+    background-image: url(/images/Luxishanu.jpeg);
 }
 #desiganphoto{
-    background-image: url(../images/Desigan.jpg);
+    background-image: url(/images/desigan.jpg);
 }
 #moganaphoto{
-    background-image: url(../images/mogana.jpg);
+    background-image: url(/images/mogana.jpg);
 }
 .profilepreview :hover{
     background-color: rgba(32, 32, 32,0.5);
