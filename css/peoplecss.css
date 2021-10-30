@@ -303,7 +303,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     .brandtitlecol{
         margin-top: 0%;
     }
@@ -311,13 +311,13 @@ body{
 
 @media only screen and (max-width: 991px) {
     .brandtitlecol{
-        margin-top: -3%;
+        margin-top: 0%;
     }
-}
+} */
 
 @media only screen and (max-width: 880px) {
     .brandtitlecol{
-        margin-top: -3%;
+        margin-top: 0%;
     }
 
     .brand-logo{
@@ -328,18 +328,18 @@ body{
         width: 17%;
     }
 }
-
+/* 
 @media only screen and (max-width: 800px) {
     .brandtitlecol{
-        margin-top: -2.5%;
+        margin-top: -;
     }
-}
+} */
 
-@media only screen and (max-width: 769px) {
+/* @media only screen and (max-width: 769px) {
     .brandtitlecol{
         margin-top: -2%;
     }
-}
+} */
 
 @media only screen and (max-width: 690px) {
     .brand-name{
@@ -403,7 +403,7 @@ body{
     }
 
     .brand-logo.scrolled{
-        width: 12%;
+        width: 32%;
     }
 }
 
@@ -417,7 +417,7 @@ body{
     }
 
     .brand-logo.scrolled{
-        width: 15%;
+        width: 35%;
     }
 }
 
@@ -434,7 +434,7 @@ body{
         height: 59px;
     }
 
-    .brand-logo.brand-logo.scrolled{
+    .brand-logo.scrolled{
         width: 35px;
     }
 }
@@ -742,6 +742,7 @@ footer {
     #footerlogo{
         padding-top: 3%;
         width: 250px;
+        height: 180px;
     }
     .connectwithus1{
         display: flex;
@@ -1039,11 +1040,11 @@ footer {
         width: 30%;
     }
     .brand-logo{
-        width: 50%;
+        width: 30%;
         /* margin-left: -70%; */
     }
     .brand-name{
-        width: 100%; 
+        width: 80%; 
      }
      .menu-wrap {
         top: 1%;

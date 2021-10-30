@@ -1099,7 +1099,13 @@ footer {
     .logocontact{
         height: 150px;
     }
-    
+    .elements{
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+    .connectwithus1{
+        padding-top: 15%;
+    }    
 }
 
 
