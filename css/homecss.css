@@ -31,7 +31,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'Lovelo';
+    src: url("../font/Lovelo-LineBold.otf") format("opentype");
+}
 body{
     background-color: #020202;
     color: #fff;
