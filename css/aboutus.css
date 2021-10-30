@@ -161,6 +161,12 @@ body{
     .active-btn{
         margin-bottom: 4%;
     }
+
+    .navbar .nav-link{
+        font-size: large;
+        padding: 5%;
+    }
+    
     /* hamburger */
     .menu-wrap {
         position: fixed;

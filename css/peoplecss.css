@@ -157,7 +157,11 @@ body{
     .brand-logo.scrolled{
         margin-top: 3%;
     }
-    
+
+    .navbar .nav-link{
+        font-size: large;
+        padding: 5%;
+    }
     /* hamburger */
     .menu-wrap {
         position: fixed;
