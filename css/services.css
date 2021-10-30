@@ -538,23 +538,44 @@ h3{
     margin-left: 30%;
 }
 /***************************************************Media Queries****************************************/
-@media screen and (max-width:1200px) and (min-width:992px) {
+@media screen and (max-width:568px) {
+    #icons{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:786px) and (min-width:568px){
     .box{
         width: 250px;
-        height: 300px;
+        height: 450px;
     }
+    #icons{
+        width: 40px;
+        height: 40px;
+    }   
 }
 @media screen and (max-width:992px) and (min-width:786px) {
     .box{
         width: 250px;
         height: 300px;
     }
+    #icons{
+        width: 50px;
+        height: 50px;
+    }
+    .box{
+        height: 350px;
+    }
 }
-@media screen and (max-width:786px) and (min-width:568px) {
+@media screen and (max-width:1200px) and (min-width:992px) {
     .box{
         width: 250px;
-        height: 300px;
-    }   
+        height: 350px;
+    }
+    #icons{
+        width: 50px;
+        height: 50px;
+    }
 }
 /*************************************************** FOOTER *********************************************/
 footer {
