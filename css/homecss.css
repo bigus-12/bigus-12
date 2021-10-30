@@ -35,6 +35,11 @@
     font-family: 'Lovelo';
     src: url("../font/Lovelo-LineBold.otf") format("opentype");
 }
+@font-face {
+    font-family: 'Loveloblack';
+    src: url("../font/Lovelo\ Black.otf") format("opentype");
+   
+}
 body{
     background-color: #020202;
     color: #fff;
@@ -44,7 +49,9 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lovelo', sans-serif;
 }
-
+div > h5{
+    font-family: 'Loveloblack'
+}
 /*************************************NAVBAR CSS **********************************/
 .navbar{
     background-color: #020202;
