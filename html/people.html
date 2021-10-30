@@ -48,19 +48,20 @@
                             </li>
                         </button>
                         <button class="btn ">
-                            <li class="nav-item">
-                                <a class="nav-link abtuslink"  href="about-us.html">About Us</a>
-                            </li>
-                        </button>
-                        <button class="btn ">
                           <li class="nav-item">
                               <a class="nav-link"  href="services.html">Services</a>
                           </li>
                       </button>
-                      <button class="btn ">
-                          <li class="nav-item">
-                              <a class="nav-link joinuslink" href="#">Join Us</a>
-                          </li>
+                        <button class="btn ">
+                            <li class="nav-item">
+                                <a class="nav-link abtuslink"  href="about-us.html">About Us</a>
+                            </li>
+                        </button>
+                        
+                      <button class="btn" id="joinbtn">
+                        <li class="nav-item">
+                            <a class="nav-link joinuslink" href="#" style="color: #020202;"><b>Join Us</b></a>
+                        </li>
                       </button>
                     </ul>
                   </div>
@@ -88,7 +89,7 @@
 
 <!--------------------------- main-container ------------------------->
 <div class="maincontent container-fluid">
-  <h2><b>Advisors</b></h2>
+  <h2 ><b style="font-family: 'Lovelo', sans-serif;">Advisors</b></h2>
   <div class="row advisor-row">
     
     <div style="padding: 3%;" class="col-6 col-lg-3 col-md-4 col-sm-4">
@@ -112,7 +113,8 @@
       </div>
     </div> 
   </div> 
-  <h2  style="color: #00f9c0;text-shadow: 0 0 22px #00f9c0, 0 0 42px #00f9c0, 0 0 52px #00f9c0, 0 0 52px #00f9c0, 0 0 71px#00f9c0; margin-top: 5%; z-index: inherit; position: relative;font-size: 150%;"><b>The Twelve</b></h2>
+  <h2  style="color: #00f9c0;text-shadow: 0 0 22px #00f9c0, 0 0 42px #00f9c0, 0 0 52px #00f9c0, 0 0 52px #00f9c0, 0 0 71px#00f9c0; margin-top: 5%; z-index: inherit; position: relative;font-size: 150%; ">
+    <b style="font-family: 'Lovelo', sans-serif;    ">The Twelve</b></h2>
   <div class="row thethirteen-row" >
     
     <div style="padding: 3%;" class="col-6 col-lg-3 col-md-4 col-sm-4">
@@ -193,35 +195,53 @@
   </div>
   
 </div>
+<!--------------------------- footer -------------------------------->
   <div class="footerarea" >
-  <footer class="page-footer row" style="z-index: inherit;  margin-left: 0px;
-  margin-right: 0px;">
-    <div class="logocontact col-lg-3 col-md-12 col-sm-12 col-xs-12" style="display:flex; align-items: center;justify-content: center;z-index: inherit;">
-        <img id="footerlogo" src="../images/footer logo.png" alt="title" height="200px" width="300px" style="z-index: inherit;" >
-    </div>
-  <div class="connectwithus col-lg-6 col-md-12 col-sm-12 col-xs-12" style="z-index: inherit;">
-    <div class="elements">
-        <p class="footercontent">
-            Want your ideas to become a reality? We are just a mail away!<br>
-            <h4>CONTACT <b>us</b></h4>
-            <p class="footercontent">bigus12.tech@gmail.com</p>
-        </p>
-  
-        <ul class="footer-links" style="z-index: inherit;" >
-            <a href="home.html">Home |</a>
-            <a href="about-us.html"> About Us |</a>
-            <a href="people.html"> People</a>
-        </ul>
-    </div>
-  </div>
-  <div class="connectwithus1 col-lg-3 col-md-12 col-sm-12 col-xs-12" style="z-index: inherit;">
-    <ul id="icons" style="margin-left: -2%" class="footer-links" style="z-index: inherit;">
-        <a href="https://www.instagram.com/BigUs12_Technologies/" target="_blank"> <img id="icon1" src="https://img.icons8.com/plasticine/52/000000/instagram-new--v2.png"/></a>
-        <a href="https://www.linkedin.com/in/bigusxii-technologies-bb72a421a/" target="_blank"> <img id="icon2" src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"/></a>
-        <a href="https://www.reddit.com/r/Bigus12_Technologies/" target="_blank"> <img id="icon3" src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-reddit-social-media-justicon-lineal-color-justicon.png"/> </a>
-    </ul>
-  </div>
-  </footer>
+    
+    <footer class="page-footer row" style="z-index: inherit;  margin-left: 0px; margin-right: 0px;">
+      <div class="logocontact col-lg-3 col-md-12 col-sm-12 col-xs-12" style="display:flex; align-items: center;justify-content: center;">
+          <img id="footerlogo" src="../images/footerlogo.png" alt="title" height="200px" width="300px" style="display:flex; align-items: center;justify-content: center;z-index: inherit;">
+      </div>
+      <div class="connectwithus col-xl-6 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+          <div class="elements">
+              <div class="row">
+                  <p class="footercontent">
+                      Want your ideas to become a reality? We are just a mail away!<br>  
+                  </p>
+              </div>
+              <div class="details row">
+                  <h6 style="font-size: 13px; margin-bottom: 0%;">CONTACT <b>us</b></h6>
+                  <p class="footercontent">bigus12.tech@gmail.com</p>
+              </div>
+              <div class="row">
+                  <h5 style="font-size: 13px; margin-bottom: 0%;">VISIT <b>us</b></h5>
+                  <p class="footercontent">SRI SAIRAM TECHNO INCUBATOR FOUNDATION<br>Sri Sairam Engineering College, West Tambaram<br>Kanchipuram - 600044</p>
+              </div>
+          </div>
+      </div>
+      <div class="connectwithus1 col-xl-3 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="row links1">
+              <div class="col-12">
+                  <ul id="pagelink" class="footer-links">
+                      <a href="home.html">Home |</a>
+                      <a href="about-us.html"> About Us |</a>
+                      <a href="people.html"> People |</a>
+                      <a href="services.html">Services |</a>
+                      <a href="#"> Join Us</a>
+                  </ul>
+              </div>
+          </div>
+          <div class="row links2">
+              <div class="col-12">
+                  <ul id="icons" class="footer-links">
+                      <a href="https://www.instagram.com/BigUs12_Technologies/" target="_blank"><img id="icon1" src="https://img.icons8.com/material-outlined/48/000000/instagram-new--v2.png"/></a>
+                      <a href="https://www.linkedin.com/in/bigusxii-technologies-bb72a421a/" target="_blank"> <img id="icon2" src="https://img.icons8.com/ios/50/000000/linkedin.png"/></a>
+                      <a href="https://www.reddit.com/r/Bigus12_Technologies/" target="_blank"><img id="icon3" src="https://img.icons8.com/ios-filled/50/000000/reddit--v2.png"/> </a>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

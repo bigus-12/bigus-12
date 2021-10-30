@@ -78,9 +78,11 @@ body{
 .active-btn{
     border-bottom: 3px solid #FFDEF3;
 }
-
 .abtuslink,.joinuslink{
     width: 85px;
+}
+#joinbtn{
+    background-color: #D53883;
 }
 
 .menu-wrap .toggler {
@@ -294,6 +296,36 @@ body{
     }
 }
 
+/******************scroll-BAR*********************************/
+
+:root {
+    --overlay-color: rgba(0, 0, 0, 0.9);
+    --menu-speed: 1.10s;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #202020;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(121, 121, 121, 0.8);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+
+
 @media only screen and (max-width: 992px) {
     .brandtitlecol{
         margin-top: 0%;
@@ -479,6 +511,7 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 3%;
 }
 p{
     text-align: center;
@@ -495,6 +528,10 @@ h3{
     transition: 0.5s ease;
     cursor: pointer;
     margin:30px;
+    margin-left: 20%;
+}
+.box2{
+    margin-left: 30%;
 }
 /***************************************************Media Queries****************************************/
 @media screen and (max-width:1200px) and (min-width:992px) {
@@ -517,18 +554,20 @@ h3{
 }
 /*************************************************** FOOTER *********************************************/
 footer {
-    /* text-align: center; */
-    /* padding: 20px; */
     color: ivory;
     background: linear-gradient(-45deg, #3B55CE, #5e1254f1);
-    /* background-color: rgb(194, 190, 190); */
-    /* height: 200px; */
     width: 100%;
 }
-.logocontact,.connectwithus1,.connectwithus{
+h5{
+    padding-top: 5%;
+    text-align: center;
+}
+.logocontact{
     height: 200px;
 }
-
+.connectwithus1,.connectwithus{
+    padding-top: 1%;
+}
 .page-footer{
     width: 100%;
     margin:0%;
@@ -541,11 +580,13 @@ footer {
     color: #202020;
     padding: 0%;
     color: ivory;
+    font-size: small;
 }
 
 .footercontent{
     text-align: center;
     font-size: 14px;
+    padding-top: 1%;
 }
 .connectwithus{
     display: flex;
@@ -571,53 +612,62 @@ footer {
     height:30px ;
 }
 #icon1,#icon2,#icon3{
-    height: 30px;
-    width:30px;
+    height: 40px;
+    width:40px;
 }
+
 .footerlogo{
     margin-left:50%;
 }
 
 /**************************************************media queries*********************************************/
+@media screen and (max-width:1200px) {
+    #footerlogo{
+        width: 200px;
+        height: 130px;
+    }
+}
 @media screen and (min-width:992px) and (max-width:1200px) {
     #footerlogo{
         width: 200px;
         height: 130px;
     }
-}
-@media screen and (min-width:768px) and (max-width:992px) {
-    .page-footer{
-        height: 400px;
+    .connectwithus{
+        padding-left: 8%;
     }
+}
+@media screen and  (max-width:992px) {
     #footerlogo{
         width: 200px;
         height: 130px;
     }
-    .connectwithus1,.connectwithus{
-        height: 100px;
-    }
+    
     .logocontact{
         height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 4%;
-        padding-top: 4%;
+        
+    }
+    .box2{
+        margin-left: 20%;
     }
 }
-@media screen and (min-width:520px) and (max-width:768px) {
-    footer{
-        height: 400px;
+@media screen and (max-width:768px) {
+    *{
+        font-size: small;
     }
     .logocontact{
         height: 200px;
     }
-    .connectwithus,.connectwithus1{
-        height: 100px;
-    }
+    
     #footerlogo{
         padding-top: 3%;
         width: 250px;
+    }
+    .box{
+        height: 250px;
+        width: 200px;
     }
     .connectwithus1{
         display: flex;
@@ -629,25 +679,20 @@ footer {
     }
     
 }
-@media screen and (max-width:520px) and (min-width:350px) {
-    footer{
-        height: 400px;
-    }
+@media screen and (max-width:570px) {
     #footerlogo{
-        width: 250px;
-        height: 150px;
+        width: 200px;
+        height: 130px;
     }
     .logocontact{
         height: 150px;
     }
-    .connectwithus,.connectwithus1{
-        height: 100px;
+    .box, .box2{
+        margin-left: 30%;
     }
 }
-@media screen and (max-width:350px) {
-    footer{
-        height: 400px;
-    }
+@media screen and (max-width:430px) {
+    
     #footerlogo{
         width: 250px;
         height: 150px;
@@ -655,8 +700,8 @@ footer {
     .logocontact{
         height: 150px;
     }
-    .connectwithus,.connectwithus1{
-        height: 100px;
-    }
+    .box, .box2{
+        margin-left: 22%;
+    }    
 }
 

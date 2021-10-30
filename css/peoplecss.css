@@ -84,12 +84,15 @@ body{
 .abtuslink,.joinuslink{
     width: 85px;
 }
+#joinbtn{
+    background-color: #D53883;
+}
 
 .menu-wrap .toggler {
     position: absolute;
     top: 0;
     left: 90%;
-    z-index: 6;
+    z-index: 16;
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -157,7 +160,7 @@ body{
         top: 0;
         top: 1%;
         left: 90%;
-        z-index: 5;
+        z-index: 15;
         visibility: visible;
     }
 
@@ -165,7 +168,7 @@ body{
         position: absolute;
         top: 0;
         left: 90%;
-        z-index: 6;
+        z-index: 16;
         cursor: pointer;
         width: 50px;
         height: 50px;
@@ -177,7 +180,7 @@ body{
         position: absolute;
         top: 0;
         left: 90%;
-        z-index: 5;
+        z-index: 15;
         width: 60px;
         height: 60px;
         padding: 1rem;
@@ -204,7 +207,7 @@ body{
     .menu-wrap .hamburger > div::after {
         content: '';
         position: absolute;
-        z-index: 5;
+        z-index: 15;
         top: -10px;
         width: 100%;
         height: 2px;
@@ -379,7 +382,7 @@ body{
         position: fixed;
         top: 0.5%;
         left: 85%;
-        z-index: 5;
+        z-index: 15;
         visibility: visible;
     }
 
@@ -437,7 +440,7 @@ body{
         position: fixed;
         top: 0;
         left: 80%;
-        z-index: 5;
+        z-index: 15;
         visibility: visible;
     }
 }
@@ -648,15 +651,14 @@ footer {
     margin-right: 0px;
 }
 
-.logocontact,.connectwithus1,.connectwithus{
+.logocontact{
     height: 200px;
 }
 
 .footerarea{
     width: 100%;
-    height: 50px; 
     position: absolute;
-    z-index: 10;
+    z-index: 9;
 }
 .footer-links{
     padding-left: 0%;
@@ -667,31 +669,35 @@ footer {
     color: #202020;
     padding: 0%;
     color: ivory;
+    font-size: small;
 }
 
 .footercontent{
     text-align: center;
-    font-size: large;
+    font-size: 14px;
+    padding-top: 1%;
 }
 .connectwithus{
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center; 
+    text-align: center;
 }
 .connectwithus1{
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
 }
-#icon1{
-    width: 70px;
-    width:70px;
+.connectwithus,.connectwithus1{
+    padding-top: 1%;
 }
-#icon3{
-    padding-left: 7%; ;
-    width: 60px;
-    height:45px;
+
+#icon1,#icon2,#icon3{
+    height: 40px;
+    width:40px;
 }
+
 .footerlogo{
     margin-left:20%;
 }
@@ -703,19 +709,17 @@ footer {
         width: 200px;
         height: 130px;
     }
+    .connectwithus{
+        padding-left: 8%;
+    }
 }
 @media screen and (min-width:768px) and (max-width:992px) {
-    .page-footer{
-        height: 400px;
-        /* z-index: 50; */
-    }
+
     #footerlogo{
         width: 200px;
         height: 130px;
     }
-    .connectwithus1,.connectwithus{
-        height: 100px;
-    }
+    
     .logocontact{
         height: 150px;
         display: flex;
@@ -726,15 +730,11 @@ footer {
     }
 }
 @media screen and (min-width:520px) and (max-width:768px) {
-    footer{
-        height: 400px;
-    }
+    
     .logocontact{
         height: 200px;
     }
-    .connectwithus,.connectwithus1{
-        height: 100px;
-    }
+    
     #footerlogo{
         padding-top: 3%;
         width: 250px;
@@ -750,9 +750,7 @@ footer {
     
 }
 @media screen and (max-width:520px) and (min-width:350px) {
-    footer{
-        height: 400px;
-    }
+    
     #footerlogo{
         width: 250px;
         height: 150px;
@@ -760,14 +758,10 @@ footer {
     .logocontact{
         height: 150px;
     }
-    .connectwithus,.connectwithus1{
-        height: 100px;
-    }
+    
 }
 @media screen and (max-width:350px) {
-    footer{
-        height: 400px;
-    }
+    
     #footerlogo{
         width: 250px;
         height: 150px;
@@ -775,9 +769,7 @@ footer {
     .logocontact{
         height: 150px;
     }
-    .connectwithus,.connectwithus1{
-        height: 100px;
-    }
+    
 }
 /******************scroll-BAR*********************************/
 
