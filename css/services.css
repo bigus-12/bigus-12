@@ -539,7 +539,7 @@ h3{
 }
 /***************************************************Media Queries****************************************/
 @media screen and (max-width:568px) {
-    #icons{
+    #icon{
         width: 40px;
         height: 40px;
     }
@@ -549,7 +549,7 @@ h3{
         width: 250px;
         height: 450px;
     }
-    #icons{
+    #icon{
         width: 40px;
         height: 40px;
     }   
@@ -559,7 +559,7 @@ h3{
         width: 250px;
         height: 300px;
     }
-    #icons{
+    #icon{
         width: 50px;
         height: 50px;
     }
@@ -572,7 +572,7 @@ h3{
         width: 250px;
         height: 350px;
     }
-    #icons{
+    #icon{
         width: 50px;
         height: 50px;
     }
@@ -730,4 +730,9 @@ h5{
         margin-left: 24%;
     }    
 }
-
+@media screen and (max-width:370px) {
+    
+    .box, .box2{
+        margin-left: 21%;
+    }    
+}
