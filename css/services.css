@@ -2,6 +2,10 @@
     --overlay-color: rgba(33, 33, 33 , 0.85);
     --menu-speed: 1.10s;
 }
+@font-face {
+    font-family: 'Lovelo';
+    src: url("../font/Lovelo-LineBold.otf") format("opentype");
+}
 *{
     margin: 0;
     padding: 0;
