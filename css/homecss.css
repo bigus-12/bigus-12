@@ -921,10 +921,6 @@ h5{
         display: flex;
         flex-direction: row;
     } */
-    .logocontact,.connectwithus1,.connectwithus{
-        height: 150px;
-        
-    }
     footer {
         text-align: center;
         color: ivory;
