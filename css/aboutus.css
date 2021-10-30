@@ -316,6 +316,10 @@ body{
     .brandtitlecol{
         margin-top: 0%;
     }
+    .elements > .row{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
 }
 
 @media only screen and (max-width: 991px) {
