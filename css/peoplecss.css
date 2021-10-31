@@ -7,17 +7,25 @@
     font-family: 'Lovelo';
     src: url("../font/Lovelo-LineBold.otf") format("opentype");
 }
+@font-face {
+    font-family: 'Loveloblack';
+    src: url("../font/Lovelo\ Black.otf") format("opentype");  
+}
+@font-face {
+    font-family: 'Lato';
+    src: url("../font/Lato-Bold.ttf");
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lovelo', sans-serif;
 }
 body{
     background-color: #020202;
+    font-family: 'Playfair Display', serif;
 }
 
 /*************************************NAVBAR CSS **********************************/
@@ -27,6 +35,7 @@ body{
     position: fixed;
     top: 0;
     height: 72px;
+    font-family: 'Loveloblack';
 }
 
 .navbar-toggler{
@@ -657,6 +666,7 @@ footer {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
+    font-family: 'Lato';
 }
 
 .logocontact{

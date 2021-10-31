@@ -37,8 +37,11 @@
 }
 @font-face {
     font-family: 'Loveloblack';
-    src: url("../font/Lovelo\ Black.otf") format("opentype");
-   
+    src: url("../font/Lovelo\ Black.otf") format("opentype");  
+}
+@font-face {
+    font-family: 'Lato';
+    src: url("../font/Lato-Bold.ttf");
 }
 body{
     background-color: #020202;
@@ -59,6 +62,7 @@ div > h5{
     position: fixed;
     top: 0;
     height: 72px;
+    font-family: 'Loveloblack';
 }
 
 .navbar-toggler{
@@ -980,6 +984,7 @@ footer {
     color: ivory;
     background: linear-gradient(-45deg, #3B55CE, #5e1254f1);
     width: 100%;
+    font-family: 'Lato';
 }
 .logocontact{
     height: 200px;

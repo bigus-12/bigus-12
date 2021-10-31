@@ -6,17 +6,26 @@
     font-family: 'Lovelo';
     src: url("../font/Lovelo-LineBold.otf") format("opentype");
 }
+@font-face {
+    font-family: 'Loveloblack';
+    src: url("../font/Lovelo\ Black.otf") format("opentype");  
+}
+@font-face {
+    font-family: 'Lato';
+    src: url("../font/Lato-Bold.ttf");
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lovelo', sans-serif;
 }
 body{
     background-color: #000000;
+    font-family: 'Playfair Display', serif;
 }
 /*************************************NAVBAR CSS **********************************/
 .navbar{
@@ -25,6 +34,7 @@ body{
     position: fixed;
     top: 0;
     height: 72px;
+    font-family: 'Loveloblack';
 }
 
 .navbar-toggler{
@@ -83,7 +93,7 @@ body{
     border-bottom: 3px solid #FFDEF3;
 }
 .abtuslink,.joinuslink{
-    width: 85px;
+    width: 90px;
 }
 #joinbtn{
     background-color: #D53883;
@@ -599,6 +609,7 @@ footer {
     color: ivory;
     background: linear-gradient(-45deg, #3B55CE, #5e1254f1);
     width: 100%;
+    font-family: 'Lato';
 }
 h5{
     padding-top: 5%;
